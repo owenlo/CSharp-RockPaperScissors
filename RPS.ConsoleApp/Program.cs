@@ -36,8 +36,7 @@ namespace RPS.ConsoleApp
 							break;
 						case 3:
 							displayResult(rps.PlaySinglePlayerGame(Gesture.Scissors));
-							break;
-						// possibly more cases here
+							break;						
 						default:
 							if (selector != maxMenuItems)
 							{
@@ -64,7 +63,7 @@ namespace RPS.ConsoleApp
 			drawStarLine();
 			Console.WriteLine(" 1. Play Against Bot");
 			Console.WriteLine(" 2. Play Against Human");
-			// more here
+			
 			Console.WriteLine(" 0. Exit program");
 			drawStarLine();
 			Console.WriteLine("Make your choice (0 to exit):  ");

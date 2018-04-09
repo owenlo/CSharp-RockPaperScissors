@@ -47,7 +47,6 @@ namespace RPS.Test
 			Assert.AreEqual(expectedResult.Player2Result, actualResult.Player2Result);
 		}
 
-
 		[TestMethod]
 		public void DrawTest()
 		{
@@ -66,8 +65,6 @@ namespace RPS.Test
 			Assert.AreEqual(expectedResult.Player1Result, actualResult.Player1Result);
 			Assert.AreEqual(expectedResult.Player2Result, actualResult.Player2Result);
 		}
-
-
 	}
 }
 

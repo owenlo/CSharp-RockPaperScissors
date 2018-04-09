@@ -17,8 +17,6 @@ namespace RPS.Lib
 			this.botAI = botAI;
 		}
 
-		//Example comment.. do some coding...
-
 		public Gesture GetGesture(Gesture playerGesture)
 		{
 			return botAI.GetGesture(playerGesture);

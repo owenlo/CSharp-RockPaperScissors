@@ -11,18 +11,14 @@ namespace RPS.Lib
 	public class RockPaperScissors : IGame
 	{
 		private Bot bot = new Bot(new RandomBot());
-
 		public Gesture Player1Gesture { get; private set; }
 		public Gesture Player2Gesture { get; private set; }
 		public Result Player1Result { get; private set; }
 		public Result Player2Result { get; private set; }
-
 		public int GameCount { get; private set; }
 		public int Player1Score { get; private set; }
 		public int Player2Score { get; private set; }
-
 		public IBotAI botAI { get; set; } 
-
 
 		public RockPaperScissors()
 		{
