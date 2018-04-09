@@ -1,0 +1,80 @@
+﻿<Window x:Class="RPS.WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="" Height="365" Width="525">
+
+    
+         <Grid Background="#DCDCDC" ShowGridLines="False"> 
+        <Grid.ColumnDefinitions>    
+            
+                <ColumnDefinition Width="125" />    
+              <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="125" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4">
+            <MenuItem Header="Mode" HorizontalContentAlignment="Right">
+                <MenuItem x:Name="menuMultiplayer" Header="Player vs Player" IsChecked="True" Click="menuMultiplayer_Click"/>
+                <MenuItem x:Name="menuSinglePlayer" Header="Player vs Bot" Click="menuSinglePlayer_Click"/>               
+                <MenuItem x:Name="menuBotVsBot" Header="Bot vs Bot" Click="menuBotVsBot_Click"/>
+            </MenuItem>
+            <MenuItem Header="Bot Difficulty">
+                <MenuItem x:Name="menuBotRandom" Header="Completely Random" IsChecked="True" Click="menuBotRandom_Click"/>
+                <MenuItem x:Name="menuBotDumbRock" Header="Dumb as a Rock" Click="menuBotDumbRock_Click"/>
+                <MenuItem x:Name="menuBotMirror" Header="Mirror Bot" Click="menuBotMirror_Click"/>
+                <MenuItem x:Name="menuBotImpossible" Header="Impossible Bot" Click="menuBotImpossible_Click"/>
+                <MenuItem x:Name="menuBotRandomAllTechniques" Header="Random Technique Bot" Click="menuBotRandomAllTechniques_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBlock Grid.Column="0" Grid.Row="1" Margin="10,20,10,0" TextWrapping="Wrap" TextAlignment="Center"  VerticalAlignment="Center"  FontFamily="Trajan Pro" FontSize="24">
+        P1
+        </TextBlock>
+
+        <TextBlock Grid.Column="3" Grid.Row="1" Margin="10,20,10,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center"  FontFamily="Trajan Pro" FontSize="24">
+            P2
+        </TextBlock>
+
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Margin="10,10,10,10" TextWrapping="Wrap" TextAlignment="Center"  FontSize="36" FontFamily="Showcard Gothic">
+           ROCK,PAPER,SCISSORS
+        </TextBlock>       
+      
+        <Label x:Name="lblPlayer1Score" Grid.Column="0" Grid.Row="3" Margin="10,10,10,10" HorizontalAlignment="Center">
+            P1 SCORE: 0
+        </Label>
+
+        <Button x:Name="btnPlayerGame" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" Content="(P)lay Game" FontFamily="Trajan Pro" Click="btnPlayerGame_Click"></Button>
+
+        <Label x:Name="lblPlayer2Score" Grid.Column="3" Grid.Row="3" Margin="10,10,10,10" HorizontalAlignment="Center">
+            P2 SCORE: 0
+        </Label>
+
+        <DockPanel Grid.Column="0" Grid.Row="2" VerticalAlignment="Center">
+            <Button x:Name="btnPlayer1Rock" DockPanel.Dock="Top" Height="50" Click="btnPlayer1Rock_Click" FontFamily="Trajan Pro">ROCK</Button>
+            <Button x:Name="btnPlayer1Paper" DockPanel.Dock="Top" Height="50" Click="btnPlayer1Paper_Click" FontFamily="Trajan Pro">PAPER</Button>
+            <Button x:Name="btnPlayer1Scissors" DockPanel.Dock="Top" Height="50" Click="btnPlayer1Scissors_Click" FontFamily="Trajan Pro">SCISSORS</Button>
+        </DockPanel>
+
+        <DockPanel Grid.Column="3" Grid.Row="2" VerticalAlignment="Center">
+            <Button x:Name="btnPlayer2Rock" DockPanel.Dock="Top" Height="50" Click="btnPlayer2Rock_Click" FontFamily="Trajan Pro">ROCK</Button>
+            <Button x:Name="btnPlayer2Paper" DockPanel.Dock="Top" Height="50" Click="btnPlayer2Paper_Click" FontFamily="Trajan Pro">PAPER</Button>
+            <Button x:Name="btnPlayer2Scissors" DockPanel.Dock="Top" Height="50" Click="btnPlayer2Scissors_Click" FontFamily="Trajan Pro">SCISSORS</Button>
+        </DockPanel>
+        <Image x:Name="imagePlayer1" Grid.Column="1" Margin="0,0,0,50" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="100" Source="Resources/None.png" />
+        <Image x:Name="imagePlayer2" Grid.Column="2" Margin="0,0,0,50" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="100" Source="Resources/None.png"/>
+             
+        <Label x:Name="lblPlayer1WinLose"  Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30"></Label>
+        <Label x:Name="lblPlayer2WinLose"  Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30"></Label>
+             
+        <Label x:Name="lblGameNumber"  Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"  HorizontalAlignment="Center" VerticalAlignment="Bottom">Game Number: 0</Label>
+
+    </Grid>
+    
+</Window>

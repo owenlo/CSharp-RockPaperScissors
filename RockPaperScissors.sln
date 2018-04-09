@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS.Lib", "RPS.Lib\RPS.Lib.csproj", "{BA7EA8B2-32CB-43B4-88AA-4D65CB5319E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS.Test", "RPS.Test\RPS.Test.csproj", "{267172AE-ADD7-441B-B5C5-D96F950815A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS.ConsoleApp", "RPS.ConsoleApp\RPS.ConsoleApp.csproj", "{6B0A65E7-DBDC-4787-A8F6-BCEAAB9238F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPS.WPFApp", "RPS.WPFApp\RPS.WPFApp.csproj", "{98F4B65E-DA3F-49A3-9952-4BFC69A5A46C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://owenlo.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RPS.Lib\\RPS.Lib.csproj
+		SccProjectName1 = RPS.Lib
+		SccLocalPath1 = RPS.Lib
+		SccProjectUniqueName2 = RPS.Test\\RPS.Test.csproj
+		SccProjectName2 = RPS.Test
+		SccLocalPath2 = RPS.Test
+		SccProjectUniqueName3 = RPS.ConsoleApp\\RPS.ConsoleApp.csproj
+		SccProjectName3 = RPS.ConsoleApp
+		SccLocalPath3 = RPS.ConsoleApp
+		SccProjectUniqueName4 = RPS.WPFApp\\RPS.WPFApp.csproj
+		SccProjectName4 = RPS.WPFApp
+		SccLocalPath4 = RPS.WPFApp
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA7EA8B2-32CB-43B4-88AA-4D65CB5319E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7EA8B2-32CB-43B4-88AA-4D65CB5319E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7EA8B2-32CB-43B4-88AA-4D65CB5319E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7EA8B2-32CB-43B4-88AA-4D65CB5319E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{267172AE-ADD7-441B-B5C5-D96F950815A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267172AE-ADD7-441B-B5C5-D96F950815A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267172AE-ADD7-441B-B5C5-D96F950815A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267172AE-ADD7-441B-B5C5-D96F950815A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0A65E7-DBDC-4787-A8F6-BCEAAB9238F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0A65E7-DBDC-4787-A8F6-BCEAAB9238F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0A65E7-DBDC-4787-A8F6-BCEAAB9238F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0A65E7-DBDC-4787-A8F6-BCEAAB9238F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98F4B65E-DA3F-49A3-9952-4BFC69A5A46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F4B65E-DA3F-49A3-9952-4BFC69A5A46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F4B65E-DA3F-49A3-9952-4BFC69A5A46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F4B65E-DA3F-49A3-9952-4BFC69A5A46C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
